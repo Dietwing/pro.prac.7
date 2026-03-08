@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f3;
+    color: #1f2a1f;
+}
+
+.page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1c3b2a 0%, #2f6b47 100%);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero h1 {
+    margin: 0 0 12px 0;
+    font-size: 34px;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 17px;
+    max-width: 820px;
+    line-height: 1.5;
+}
+
+.controls-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.control,
+.summary-card,
+.chart-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(31, 42, 31, 0.08);
+}
+
+.control label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #2f6b47;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.summary-card span {
+    display: block;
+    color: #5a665a;
+    margin-bottom: 8px;
+}
+
+.summary-card h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.chart-card-wide {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
